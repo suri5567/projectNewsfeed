@@ -1,53 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>news feed</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-	<div class="container">
-		<div class="imageContainer"></div>
-		<div class="newsContainers">
-			<div class="row">
-				<div class="item">
-					<h1>Cloned fingerprints scam: The story of Aadhaar Enabled Payment System</h1>
-					<p>The Aeps was launched in 2014
-						by the indian government to empower...
-					</p>
-					<p>By Umesh kumar Ray | 2 Days ago</p>
-				</div>
-				<div class="item">
-					<h1>Asia cup 2023: Fake anti- BCCI Quote falsely Attributed To Sunil...</h1>
-					<p>BOOM found that the quote is fake and sunil Gavaskar has made no Such...</p>
-					<p>- By Anmol Alphonso | 2 Days ago</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="item">
-					<h1>AI-Generated Image of Aamir Khan viral As Lala Amarnath Biopic Look</h1>
-					<p>BOOM found that the image has been generated using Artificial...</p>
-					<p>-By Swasti chatterjee | 8 Days ago</p>
-				</div>
-				<div class="item"><h1>Image of Train Decorated With Flowers for Onam Is Fake</h1>
-				<p>BOOM found thate the image has been made using generative -AI and is not...</p>
-			<p>-By Hazel Gandhi | 8 Days ago</p>
-		</div>
-			</div>
-		</div>
-	</div>
-	<script src="/index.js"></script>
-</body>
-
-</html>
-
- -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,47 +6,73 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>news feed</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
 </head>
 
 <body>
 	<div class="container">
-		<div class="imageContainer">
-		</div>
-		<div class="newsContainers">
-			<div class="row">
-				<div class="item">
-					<div>
-						<p class="factTitle">Decode</p>
-					</div>
-					<h1>Cloned fingerprints scam: The story of Aadhaar Enabled Payment System</h1>
-					<p>The Aeps was launched in 2014 by the Indian government to empower...</p>
-					<p>By Umesh Kumar Ray | 2 Days ago</p>
-				</div>
-				<div class="item">
-					<div>
-						<p class="factTitle">Sports</p>
-					</div>
-					<h1>Asia cup 2023: Fake anti-BCCI Quote falsely Attributed To Sunil...</h1>
-					<p>BOOM found that the quote is fake and Sunil Gavaskar has made no Such...</p>
-					<p>- By Anmol Alphonso | 2 Days ago</p>
-				</div>
+		<div class="left_container">
+			<div class="img_container">
+				<img src="https://www.boomlive.in/h-upload/2023/09/05/1014361-gautam-gambhir-01.webp">
 			</div>
-			<div class="row">
-				<div class="item">
-					<div>
-						<p class="factTitle">Fact check</p>
+		</div>
+		<div class="right_container">
+			<div class="newsContainers">
+				<div class="row">
+					<div class="item">
+						<div style="display:flex; justify-content: space-between; ">
+							<p class="factTitle">Decode</p>
+							<div>
+								<span class="bi bi-forward-fill red-color"> </span>
+								<span><i class='bi bi-three-dots-vertical'></i></span>
+
+							</div>
+						</div>
+						<h4>Cloned fingerprints scam: The story of Aadhaar Enabled Payment System</h4>
+						<p>The Aeps was launched in 2014 by the Indian government to empower...</p>
+						<p>By Umesh Kumar Ray | 2 Days ago</p>
 					</div>
-					<h1>AI-Generated Image of Aamir Khan viral As Lala Amarnath Biopic Look</h1>
-					<p>BOOM found that the image has been generated using Artificial...</p>
-					<p>-By Swasti Chatterjee | 8 Days ago</p>
+					<div class="item">
+						<div style="display:flex; justify-content: space-between; ">
+							<p class="factTitle">Sports</p>
+							<div>
+								<span class="bi bi-forward-fill red-color"> </span>
+								<span><i class='bi bi-three-dots-vertical'></i></span>
+
+							</div>
+						</div>
+						<h4>Asia cup 2023: Fake anti-BCCI Quote falsely Attributed To Sunil...</h4>
+						<p>BOOM found that the quote is fake and Sunil Gavaskar has made no Such...</p>
+						<p>- By Anmol Alphonso | 2 Days ago</p>
+					</div>
 				</div>
-				<div class="item">
-					<div>
-						<p class="factTitle">Fact check</p>
+				<div class="row">
+					<div class="item">
+						<div style="display:flex; justify-content: space-between; ">
+							<p class="factTitle">Fact check</p>
+							<div>
+								<span class="bi bi-forward-fill red-color"> </span>
+								<span><i class='bi bi-three-dots-vertical'></i></span>
+
+							</div>
+						</div>
+						<h4>AI-Generated Image of Aamir Khan viral As Lala Amarnath Biopic Look</h4>
+						<p>BOOM found that the image has been generated using Artificial...</p>
+						<p>-By Swasti Chatterjee | 8 Days ago</p>
 					</div>
-					<h1>Image of Train Decorated With Flowers for Onam Is Fake</h1>
-					<p>BOOM found that the image has been made using generative -AI and is not...</p>
-					<p>-By Hazel Gandhi | 8 Days ago</p>
+					<div class="item">
+						<div style="display:flex; justify-content: space-between; ">
+							<p class="factTitle">Fact check</p>
+							<div>
+								<span class="bi bi-forward-fill red-color"> </span>
+								<span><i class='bi bi-three-dots-vertical'></i></span>
+
+							</div>
+						</div>
+						<h4>Image of Train Decorated With Flowers for Onam Is Fake</h4>
+						<p>BOOM found that the image has been made using generative -AI and is not...</p>
+						<p>-By Hazel Gandhi | 8 Days ago</p>
+					</div>
 				</div>
 			</div>
 		</div>

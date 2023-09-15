@@ -1,181 +1,140 @@
-/* 
-body{
+body {
 	background-color: black;
-}
-.container{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-	height:600px;
-	width:100%;
-	background-color: white;
-}
-.imageContainer{
-	height:67%;
-	width:50%;
-	border-radius: 15px;
-	margin-right: 15px;
-	margin-left: 15px;
-	background-image:url("https://www.boomlive.in/h-upload/2023/09/05/1014361-gautam-gambhir-01.webp");
-	background-position: center;
-	background-size: cover;
-}
-.newsContainers{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	height:72%;
-	width:60%;
-	margin-right: 15px;
-	margin-left: 15px;
-
-}
-
-.row {
-	display: flex;
-	justify-content: space-between; 
-	align-items: center;
-	flex-basis: calc(20% - 10px);
-	margin: 2px; 
-	height:70%;
-	width:100%;
-	margin-top: 10px;
-  }
-
-  .item {
-	flex: 1;
-    width: calc(50% - 20px);
-    margin: 5px;
-    padding: 8px 8px;
-    box-sizing: border-box;
-    border: 1px solid rgb(214, 194, 194);
-    border-radius: 10px;
-    text-align: justify;
-}
-
-h1{
-	font-size: 20px;
-	font-weight: bold;
-} 
- 
- 
-
- */
-
-
- body {
-    background-color: black;
-    margin: 0;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: white;
-    padding: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 10px;
+	width: 100% !important;
+	box-sizing: border-box;
+	margin-top: 50px;
 }
 
-.imageContainer {
-    height: 100%; /* Default height for larger screens */
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    background-image: url("https://www.boomlive.in/h-upload/2023/09/05/1014361-gautam-gambhir-01.webp");
-    background-position: center;
-    background-size: cover;
-} 
+.left_container {
+	width: 50%;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.right_container {
+	width: 50%;
+}
+
+.img_container img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+
+}
 
 .row {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
 }
 
 .item {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid rgb(214, 194, 194);
-    border-radius: 10px;
-    text-align: justify;
+	width: 60%;
+	margin: 5px;
+	padding: 15px;
+	box-sizing: border-box;
+	border: 1px solid rgb(184, 142, 142);
+	border-radius: 10px;
+	text-align: justify;
 }
 
 h1 {
-    font-size: 20px;
-    font-weight: bold;
+	font-weight: 20px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
-.factTitle{
-	color:rgb(255, 98, 0);
+p {
+	font-size: 15px;
 }
 
-/* Media Queries for Responsive Design */
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-
-    .imageContainer {
-        height: 500px; /* Adjust the height for tablets and larger screens */
-        width: 40%;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
-
-    .newsContainers {
-        width: 55%;
-    }
-
-    .row {
-        flex-direction: row;
-    }
-
-    .item {
-        width: calc(50% - 20px);
-        margin: 5px;
-    }
+.factTitle {
+	font-size: 12px;
+	color: rgb(168, 114, 56);
+	font-weight: bold;
 }
 
-/* Media Queries for Mobile Devices */
-@media (max-width: 767px) {
-    .imageContainer {
-        height: 200px; /* Adjust the height for mobile devices */
-    }
+@media (max-width: 600px) {
+	.container {
+		flex-direction: column;
+		width: 100% !important;
+		overflow: hidden;
+		overflow-y: hidden;
+		margin: 0;
+		padding: 0;
+	}
 
-    .item {
-        width: 100%;
-    }
+	.left_container {
+		width: 100% !important;
+	}
+
+	.right_container {
+		width: 100%;
+	}
+
+	.img_container img {
+		width: 100%;
+		border-radius: 15px;
+		margin: 5px;
+	}
 }
 
-/* Media Queries for iPad Air and iPad Mini */
-/* Media Query for Tablets (768px to 1496px) */
-@media (min-width: 768px) and (max-width: 1496px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
+@media (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+		width: 100% !important;
+		overflow: hidden;
+		overflow-y: hidden;
+		margin: 0;
+		padding: 0;
+	}
 
-    .imageContainer {
-        height: 300px; /* Adjust the height for tablets within this range */
-        width: 40%;
-        margin-right: 15px;
-        margin-left: 15px;
-    }
+	.left_container {
+		width: 100% !important;
+	}
 
-    .newsContainers {
-        width: 55%;
-    }
+	.right_container {
+		width: 100%;
+	}
 
-    .row {
-        flex-direction: row;
-    }
+	.img_container img {
+		width: 100%;
+		border-radius: 15px;
+		margin: 20px;
+	}
+}
 
-    .item {
-        width: calc(50% - 20px);
-        margin: 5px;
-    }
+@media (max-width: 1180px) {
+	.container {
+		flex-direction: column;
+		width: 100% !important;
+		overflow: hidden;
+		overflow-y: hidden;
+		margin: 0;
+		padding: 0;
+	}
+
+	.left_container {
+		width: 100% !important;
+	}
+
+	.right_container {
+		width: 100%;
+	}
+
+	.img_container img {
+		width: 93%;
+		border-radius: 15px;
+		margin: 17px;
+	}
 }
